@@ -4,46 +4,71 @@
         <link rel="stylesheet" href="./styles.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+Decol&display=swap" rel="stylesheet">
     </head>
 
     <body>
+        <img class="wedding-img" src="https://images.unsplash.com/photo-1532712938310-34cb3982ef74?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
         <header>
-            <h1 class="great-vibes-regular">Bob and June</h1> 
-            <p>Location: Marymoor Park - Date: July 4th - Time: 2:00PM - Dresscode: Formal</p>
+            <h1>You're Invited!</h1> 
+            <p class="wedding-caption">Bob and June's wedding</p>
             </header>
+        
+        <a href="#rsvp" class="rsvp-link">RSVP NOW</a>
+    
+        <p class="info">Location: Marymoor Park </p>
+        <p class="info">Date: July 4th </p>
+        <p class="info">Time: 2:00PM</p>
+        <p class="info">Dresscode: Formal</p>
+
         <section class="main-content">
-        <p><a href="#rsvp"> RSVP </a></p>
-        <p>Bob and June met at a Coffee Shop 17 years ago. Back then, they were busy scrambling to rush to their classes. Unfortunately, Bob spilled coffee onto June. Bob said he would pay for it and left his number. </p>
-        <p>Just earlier this year, Bob proposed to June in this very same Coffee Shop. The barista had held up a sign, <em>"Will you marry me."</em>  Bob stood there with flowers and with his fancy new suit. Her eyes glistened and she said <strong>"Yes!"</strong></p>
 
-        <div class="gifts">
-            <h3>Stores registered for gifts at</h3>
-
-            <ul>
-                <li>Target</li>
-                <li>Crate & Barrel</li>
-                <li>Costco</li>
-            </ul>
-        </div>
-        <h3><a href="https://www.honeyfund.com/">Donate to the Honeymoon!</a><h3>
-        <form id="rsvp">
-            <label for="first-name">First Name</label>
-            <input id="first-name" name="first-name" type="text">
-            <label for="last-name">Last Name</label>
+            <h2>OUR STORY</h2>
+            <section class="story">
+                <p>Bob and June met at a Coffee Shop 17 years ago. Back then, they were busy scrambling to rush to their classes. Unfortunately, Bob spilled coffee onto June. Bob said he would pay for it and left his number. </p>
+                <p>Just earlier this year, Bob proposed to June in this very same Coffee Shop. The barista had held up a sign, <em><strong>"Will you marry me."</strong></em>  Bob stood there with flowers and with his fancy new suit. Her eyes glistened and she said,</p> 
+                <p><em><strong>"Yes!"</strong></em></p>
+            </section>
             
-            <input for="attending">Will you attend?</input>
-            <input type="radio" id="attending" name="attending" value="yes">Yes
-            <input type="radio" id="attending" name="attending" value="no">No
+            <section class="gifts">
+                <h3>Stores registered for gifts at:</h3>
+                <ul>
+                    <li>Target</li>
+                    <li>Crate & Barrel</li>
+                    <li>Costco</li>
+                </ul>
+            </section>
 
-            <label for="guests">How many guests?</label>
-            <input type="number" id="guests" name="guests" min="1" max="5" step="1">
+            <img src="https://images.unsplash.com/photo-1561133211-6067fc8e7348?q=80&w=2065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="park">
 
-            <label for="message">Leave us a message!</label>
-            <textarea id="message" name="message" placeholder="Congratulations..."></textarea>
+            <section class="form-box">
+                <form id="rsvp">
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" name="first-name" type="text">
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" name="last-name" type="text">
 
-            <input type="submit">
-        </form>
+                    <label for="attending">Will you attend?</label>
+                    <div class="attend">
+                        <span><input type="radio" id="attending" name="attending" value="yes">Yes</span>
+                        <span><input type="radio" id="attending" name="attending" value="no">No</span>
+                    </div>
+
+                    <label for="guests">How many guests?</label>
+                    <input type="number" id="guests" name="guests" min="1" max="5" step="1">
+
+                    <label for="message">Leave us a message!</label>
+                    <textarea id="message" name="message" placeholder="Congratulations..."></textarea>
+
+                    <input type="submit" id="submit">
+                </form>
+            </section>
     </section>
+
+    <footer>
+        <a href="https://www.honeyfund.com/" class="honeyfund">Donate to the Honeymoon HERE</a>
+        <p class="see-you-there">We hope to see you there!</p>
+    </footer>
     </body>
-</html>
+</html>  
+
